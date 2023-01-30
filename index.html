@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before and after speodo selector</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background-color: rgb(0, 0, 0);
+            color: white;
+        }
+        header::before{
+            background:url("https://source.unsplash.com/collection/190727/16000*900") no-repeat center center/cover;
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.3;
+        }
+        .navigation{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            display: flex;
+            font-size: 20px;
+        }
+        section{
+            height: 244px;
+            /*border: 2px solid red;*/
+            margin: 3px 123px;
+            padding: 3px 23px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        li{
+            list-style: none;
+        }
+        h3{
+            font-size: 3rem;
+        }
+        .item{
+            padding: 1px 5px;
+            margin: 20px;
+            border-radius: 8px;
+
+        }
+        .item:hover{
+            color: rgb(0, 104, 0);
+            
+        }
+        /*section::after{
+            content:"this is a content"
+        }*/
+        
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item">Home</li>
+                <li class="item">About</li>
+                <li class="item">Services</li>
+                <li class="item">Contect</li>
+            </ul>
+        </nav>
+    </header>
+        <section>
+            <h3>Welcome to coding world</h3>
+            
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit minima necessitatibus accusamus cupiditate vel, atque quia et. Voluptatum, rem debitis non dolorem delectus sunt est iste, tenetur odio quibusdam velit.</p>
+        </section>
+        <br>
+</body>
+
+</html>
